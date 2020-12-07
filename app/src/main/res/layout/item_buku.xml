@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="buku"
+            type="com.bibliotek.model.Buku"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/item_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/linearlayout">
+
+            <ImageView
+                android:id="@+id/ivFotoProfil"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:profileImage="@{buku.imgURL}"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_judulBuku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    style="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:text="@{buku.judul}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_pengarang"
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@{buku.pengarang}"
+                    app:layout_constraintStart_toStartOf="@+id/tv_judulBuku"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_judulBuku" />
+
+                <TextView
+                    android:id="@+id/tv_penerbit"
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@{buku.penerbit}"
+                    app:layout_constraintStart_toStartOf="@+id/tv_pengarang"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_pengarang" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="5dp">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEditBuku"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:backgroundTint="@color/coklatRegis"
+                        android:text="@string/edit"
+                        android:textColor="@color/hitam"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDeleteBuku"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/fragmentTambah"
+                        android:text="@string/hapus"
+                        android:textColor="@color/hitam"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#B3B2B2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearlayout"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/coklatDrawerBawah"
+            android:padding="20dp"
+            android:text="Pilih Media"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGaleri"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:drawableTint="#FFFFFF"
+                android:paddingRight="5dp"
+                android:text="Galeri"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/coklatRegis"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:cornerRadius="5dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnKamera"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:drawableTint="#FFFFFF"
+                android:paddingRight="5dp"
+                android:text="Kamera"
+                android:backgroundTint="@color/coklatRegis"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:cornerRadius="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

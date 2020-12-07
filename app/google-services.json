@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "978467487060",
+    "firebase_url": "https://bibliotekhome.firebaseio.com",
+    "project_id": "bibliotekhome",
+    "storage_bucket": "bibliotekhome.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978467487060:android:0ac897ac65699da1abdcc1",
+        "android_client_info": {
+          "package_name": "com.bibliotek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978467487060-eb7a8iq1t4snl7h5ijoj54j92mjfi9j7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bibliotek",
+            "certificate_hash": "2e60ff810853acdb7a88cc3f75fd5ebf2b853dc1"
+          }
+        },
+        {
+          "client_id": "978467487060-8u56l03ek5erops0glciukc1kirsf0kp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX7uAQXpOP39-d3gMOXTy58OcklxGVmIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978467487060-8u56l03ek5erops0glciukc1kirsf0kp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

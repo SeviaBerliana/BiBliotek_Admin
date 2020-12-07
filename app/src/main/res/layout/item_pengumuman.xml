@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="pengumuman"
+            type="com.bibliotek.model.Pengumuman"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/item_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_judulPengumuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:text="@{pengumuman.judul}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_descPengumuman"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@{pengumuman.deskripsi}"
+            app:layout_constraintStart_toStartOf="@+id/tv_judulPengumuman"
+            app:layout_constraintTop_toBottomOf="@+id/tv_judulPengumuman" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditPengumuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/coklatRegis"
+            android:text="@string/edit"
+            android:textColor="@color/hitam"
+            app:layout_constraintEnd_toStartOf="@+id/btnHapusPengumuman"
+            app:layout_constraintTop_toBottomOf="@+id/tv_descPengumuman" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHapusPengumuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/fragmentTambah"
+            android:text="@string/hapus"
+            android:textColor="@color/hitam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnEditPengumuman" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#B3B2B2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEditPengumuman" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

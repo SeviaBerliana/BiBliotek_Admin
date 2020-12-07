@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#B87D48</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="coklatRegis">#B87D48</color>
+    <color name="coklatDrawerBawah">#9E6240</color>
+    <color name="hitam">#000000</color>
+    <color name="fragmentTambah">#FFE0B5</color>
+    <color name="item_adapter">#E5E5E5</color>
+    <color name="pink">#E85D5D</color>
+</resources>
