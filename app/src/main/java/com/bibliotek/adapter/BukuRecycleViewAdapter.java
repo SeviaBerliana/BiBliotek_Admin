@@ -119,7 +119,6 @@ public class BukuRecycleViewAdapter extends RecyclerView.Adapter<BukuRecycleView
         }
     }
 
-    //Fungsi menghapus data buku
     public void deleteBuku(String id){
         RequestQueue queue = Volley.newRequestQueue(context);
 

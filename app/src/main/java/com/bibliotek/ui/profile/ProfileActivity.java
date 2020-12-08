@@ -90,7 +90,6 @@ public class ProfileActivity extends AppCompatActivity {
         });
     }
 
-    //    ask camera permissions
     private void askCameraPermissions() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.CAMERA}, 101);

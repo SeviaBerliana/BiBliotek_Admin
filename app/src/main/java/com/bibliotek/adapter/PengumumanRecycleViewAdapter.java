@@ -126,7 +126,6 @@ public class PengumumanRecycleViewAdapter extends RecyclerView.Adapter<Pengumuma
         }
     }
 
-    //Fungsi menghapus data pengumuman
     public void deletePengumuman(String id){
         RequestQueue queue = Volley.newRequestQueue(context);
 

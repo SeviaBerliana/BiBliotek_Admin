@@ -67,5 +67,4 @@ public class UserRecycleViewAdaper extends RecyclerView.Adapter<UserRecycleViewA
             binding.executePendingBindings();
         }
     }
-
 }
