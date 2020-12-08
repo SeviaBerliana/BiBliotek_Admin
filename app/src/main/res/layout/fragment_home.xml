@@ -14,21 +14,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_margin="16dp"
+        android:layout_marginHorizontal="16dp"
         tools:context=".ui.home.HomeFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="32dp">
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnNavigasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="4dp"
                 android:backgroundTint="@color/coklatDrawerBawah"
                 android:text="@string/dapatkan_navigasi"
                 android:textColor="@android:color/white" />
@@ -37,6 +37,7 @@
                 style="@style/TextAppearance.MaterialComponents.Headline3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
                 android:text="Daftar User"
                 android:textAlignment="center"
                 android:textColor="#000000"/>
