@@ -62,4 +62,13 @@ public class User implements Serializable {
     public void setAlamat(String alamat) {
         this.alamat = alamat;
     }
+
+    public User(String namaLengkap, String email) {
+        this.namaLengkap = namaLengkap;
+        this.email = email;
+    }
+
+    public User() {
+
+    }
 }
